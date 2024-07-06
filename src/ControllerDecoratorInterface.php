@@ -6,11 +6,9 @@ use Lsr\Interfaces\ControllerInterface;
 
 interface ControllerDecoratorInterface
 {
+    public function setController(ControllerInterface $controller): static;
 
-	public function setController(ControllerInterface $controller): static;
+    public function init(): void;
 
-	public function init(): void;
-
-	public function decorates(string $method): bool;
-
+    public function decorates(string $method): bool;
 }

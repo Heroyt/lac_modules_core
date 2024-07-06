@@ -4,11 +4,9 @@ namespace LAC\Modules\Core;
 
 interface MenuExtensionInterface
 {
-
-	/**
-	 * @param array<string|int, array{name:string,icon?:string,route:string,children?:array{name:string,route:string}[]}> $menu
-	 * @return void
-	 */
-	public function extend(array &$menu): void;
-
+    /**
+     * @param array<string|int, array{name:string,icon?:string,route:string,children?:array{name:string,route:string}[]}> $menu
+     * @return void
+     */
+    public function extend(array &$menu): void;
 }
